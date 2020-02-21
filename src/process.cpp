@@ -10,8 +10,8 @@
 using std::string;
 using std::to_string;
 using std::vector;
-
-Process::Process(int pid, long Hz) : pid_(pid), Hz_(Hz) {
+ 
+Process::Process(int pid) : pid_(pid) {
   cpu_util_ = Process::CpuUtilization();
  }
 
